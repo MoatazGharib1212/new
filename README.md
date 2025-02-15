@@ -92,7 +92,7 @@ Let me know if you'd like me to stop there or if you'd like me to continue with 
 ## Phase 2:
 
 - In this Phase We extended the ChatBot by loading SQL database rather than hardcoded dataset
-- *[Colab NoteBook](https://colab.research.google.com/drive/1DfPu5WOCl8w90B7PTIGpDcaF_qB69vHH?usp=sharing#scrollTo=iWVdD2BxPB8s)*
+- *[Colab NoteBook](https://colab.research.google.com/drive/12jx4yGiKbFA83Fw2RZwhPk7VyMZRo7sM?usp=sharing)*
 - Results:
 
 ## Phase 3:
@@ -160,6 +160,6 @@ Let me know if you'd like me to stop there or if you'd like me to continue with 
 
 ## Contributors <img src="https://i.imgur.com/SfBB4jV.png" width="28" />
 
-| <a href="https://avatars.githubusercontent.com/shady-2004?v=4"><img src="https://avatars.githubusercontent.com/shady-2004?v=4" alt="ِِAsmaa Ali" width="150"></a> | <a href="https://avatars.githubusercontent.com/mostafa1231?v=4"><img src="https://avatars.githubusercontent.com/mostafa1231?v=4" alt="Mostafa Nasser" width="150"></a> | <a href="https://avatars.githubusercontent.com/MoatazGharib1212?v=4"><img src="https://avatars.githubusercontent.com/MoatazGharib1212?v=4" alt="Moataz Mohamed" width="150"></a> |  |
+| <a href="https://avatars.githubusercontent.com/asmaali-easa?v=4"><img src="https://avatars.githubusercontent.com/asmaali-easa?v=4" alt="ِِAsmaa Ali" width="150"></a> | <a href="https://avatars.githubusercontent.com/mostafa1231?v=4"><img src="https://avatars.githubusercontent.com/mostafa1231?v=4" alt="Mostafa Nasser" width="150"></a> | <a href="https://avatars.githubusercontent.com/MoatazGharib1212?v=4"><img src="https://avatars.githubusercontent.com/MoatazGharib1212?v=4" alt="Moataz Mohamed" width="150"></a> |  |
 | :-----------------------------------------------------------------------------------------------------------------------------------------------------------------: | :--------------------------------------------------------------------------------------------------------------------------------------------------------------: | :---------------------------------------------------------------------------------------------------------------------------------------------------------: | :----------------------------------------------------------------------------------------------------------------------------------------------------------------: |
-|                                                           [Asmaa Ali](https://github.com/shady-2004)                                                            |                                                           [Mostafa Nasser](https://github.com/mostafa1231)                                                            |                                                          [Moataz Mohammed](https://github.com/MoatazGharib1212)                                                           |
+|                                                           [Asmaa Ali](https://github.com/asmaali-easa)                                                            |                                                           [Mostafa Nasser](https://github.com/mostafa1231)                                                            |                                                          [Moataz Mohammed](https://github.com/MoatazGharib1212)                                                           |
