@@ -64,15 +64,30 @@ the ChatBot is a conversational AI system for an e-commerce platform that allows
 
 ## Devolpment Main Phases <img src="https://i.imgur.com/e1DBlTk.png" width="28" />
 
-- *Phase 1:* In this Phase we used PHI-4 Model and HardCoded database in jason format to build the initial cahtbot
+- *Phase 1:* In this Phase we used llama3-8b Model and HardCoded database in jason format to build the initial cahtbot
 - *Phase 2:* We extended the ChatBot by loading SQL database rather than hardcoded dataset
 - *Phase 3:* We could develop a complete front-end and back-end system for the chatbot, making it a fully deployable application.
 
 ## Phase 1:
 
-- In this Phase we used PHI-4 Model and HardCoded database in jason format to build the initial cahtbot
-- *[Colab NoteBook](https://colab.research.google.com/drive/1DfPu5WOCl8w90B7PTIGpDcaF_qB69vHH?usp=sharing#scrollTo=iWVdD2BxPB8s)*
+- In this Phase we used llama3-8b Model and HardCoded database in jason format to build the initial cahtbot
+- *[Colab NoteBook](https://colab.research.google.com/drive/15qk77YmCGZDHyKk2faVEez0X2Mq1LhUQ?usp=sharing)*
 - Results:
+-  Q: print items in descending order according to price?
+-  A : Here are the product names and prices:
+1. MacBook Pro - 1749
+2. Samsung Galaxy Book - 1499
+3. Microsoft Surface Laptop 4 - 1499
+4. Samsung Universe 9 - 1249
+5. Infinix INBOOK - 1099
+6. HP Pavilion 15-DK1056WM - 1099
+7. iPhone X - 899
+8. iPhone 9 - 549
+9. Huawei P30 - 499
+10. OPPOF19 - 280
+...
+
+Let me know if you'd like me to stop there or if you'd like me to continue with the rest of the products!
 
 ## Phase 2:
 
