@@ -71,7 +71,7 @@ the ChatBot is a conversational AI system for an e-commerce platform that allows
 ## Phase 1:
 
 - In this Phase we used llama3-8b Model and HardCoded database in jason format to build the initial cahtbot
-- *[Colab NoteBook](https://colab.research.google.com/drive/15qk77YmCGZDHyKk2faVEez0X2Mq1LhUQ?usp=sharing)*
+- *[Colab NoteBook](https://colab.research.google.com/drive/175AzW5izdhL7IYIr4e2TvXvneAX5xkEK?usp=sharing)*
 - Results:
 -  Q: print items in descending order according to price?
 -  A : Here are the product names and prices:
@@ -103,8 +103,7 @@ Let me know if you'd like me to stop there or if you'd like me to continue with 
 ## Phase 3:
 
 - In this Phase We could develop a complete front-end and back-end system for the chatbot, making it a fully deployable application.
-- *[FrontEnd code](https://colab.research.google.com/drive/1DfPu5WOCl8w90B7PTIGpDcaF_qB69vHH?usp=sharing#scrollTo=iWVdD2BxPB8s)*
-- *[BackEnd code](https://colab.research.google.com/drive/1DfPu5WOCl8w90B7PTIGpDcaF_qB69vHH?usp=sharing#scrollTo=iWVdD2BxPB8s)*
+- *[Deployment code](https://drive.google.com/drive/folders/1FXDR2N5eG3ArVfed_BCBtZHfRC3B8T_l?usp=drive_link)*
   
 ## Deployment Instructions <img src="https://i.imgur.com/DRfWA84.png" width="28" />
 
@@ -145,7 +144,7 @@ Let me know if you'd like me to stop there or if you'd like me to continue with 
 ## run ChatBot Instructions <img src="https://i.imgur.com/DRfWA84.png" width="28" />
 1. you can run the ChatBot without deployment in option 2 from Colab NoteBook
 2. you can try it after the deployment using the link
-- *[ChatBot](https://colab.research.google.com/drive/1DfPu5WOCl8w90B7PTIGpDcaF_qB69vHH?usp=sharing#scrollTo=iWVdD2BxPB8s)*
+- *[ChatBot](https://streamlit-service-10183377996.us-central1.run.app/)*
 
 ## Future Features <img src="https://i.imgur.com/8i5qWJE.png" width="28" />
 
