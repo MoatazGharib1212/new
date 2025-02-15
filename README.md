@@ -93,66 +93,57 @@ Let me know if you'd like me to stop there or if you'd like me to continue with 
 
 - In this Phase We extended the ChatBot by loading SQL database rather than hardcoded dataset
 - *[Colab NoteBook](https://colab.research.google.com/drive/12jx4yGiKbFA83Fw2RZwhPk7VyMZRo7sM?usp=sharing)*
-- Results:
-
+- SQL DataBase Scheme: the following diagram shows the 9 Tables (Cart, Items, Users,...) and shows the relations between them
+  ![Alt text](https://drive.google.com/uc?export=view&id=1Y7mPtIdz_zxFQwqUqtKZIoAdgU-iQ94X)
+- overall architecture: the following diagram shows the Overall Architecture of the Chatbot, it consists of 3 parallel paths
+  1) The First path is to generate general answers to the general questions from the user like HI, Greetings,.......
+  2) The Second path is to generate quries to questions from the user related to the products, The select query is the only allowed one in this path.
+  3) The Third path calls some predefined functions securely implemented to update specific tables and attributes within the database. They ensure that only authorized modifications are made, preventing users or language models from executing unauthorized queries.
+  ![Alt text](https://drive.google.com/uc?export=view&id=1OnAnEwN_LZeH6R8rMuLQTpZsvoRhRzmp)
 ## Phase 3:
 
 - In this Phase We could develop a complete front-end and back-end system for the chatbot, making it a fully deployable application.
 - *[FrontEnd code](https://colab.research.google.com/drive/1DfPu5WOCl8w90B7PTIGpDcaF_qB69vHH?usp=sharing#scrollTo=iWVdD2BxPB8s)*
 - *[BackEnd code](https://colab.research.google.com/drive/1DfPu5WOCl8w90B7PTIGpDcaF_qB69vHH?usp=sharing#scrollTo=iWVdD2BxPB8s)*
   
-## Setup Instructions <img src="https://i.imgur.com/DRfWA84.png" width="28" />
+## Deplyment Instructions <img src="https://i.imgur.com/DRfWA84.png" width="28" />
 
-1. Clone the repository:
+1.Download the SDK Installer:
+    ```bash
+    curl -O https://dl.google.com/dl/cloudsdk/channels/rapid/GoogleCloudSDKInstaller.exe
+    ```
+2.  Run the Installer:
     
     ```bash
-    git clone https://github.com/OmarGamal10/Lifta.git
+    start GoogleCloudSDKInstaller.exe
     ```
     
-2. Navigate to the project directory:
+3. Initialize Google Cloud SDK:
     
     ```bash
-    cd Lifta
+    gcloud init
     ```
     
-3. Install dependencies for both the backend and frontend:
+4. Download Docker Desktop Installer:
     
     ```bash
-    cd server
-    npm install
-    cd ../FrontEnd
-    npm install
+    curl -LO https://desktop.docker.com/win/stable/Docker%20Desktop%20Installer.exe
+    Docker Desktop Installer.exe install
+    start DockerDesktop
     ```
 	
-4. Create the database:
-	- Run the database schema script in the lifta_schema.sql file in pgAdmin
-	
-5. Configure connection details:
-    -  Create config.env file inside the server folder and configure connection details as follows:
-    
-	```
-	NODE_ENV=development
-	PORT=3000
-	DATABASE_PASSWORD=your_database_password
-	SECRETKEY=your_secret_key
-	```
-	
-6. Start the backend server:
-	
-    ```bash
-    cd server
-    npm start
-    ```
-    
-7. Start the frontend server:
-    
-	```bash
-    cd FrontEnd
-    npm run dev
-    ```
-    
-8. Access the application at http://localhost:5173.
-- 
+5. Run the following:
+   ```bash
+   gcloud config set project groq-sql-app
+   docker build -t gcr.io/groq-sql-app/fastapi-service -f Dockerfile.fastapi .
+   docker push gcr.io/groq-sql-app/fastapi-service
+   gcloud run deploy fastapi-service  --image gcr.io/groq-sql-app/fastapi-service  --platform managed  --region us-central1  --allow-unauthenticated
+   ```
+## run ChatBot Instructions <img src="https://i.imgur.com/DRfWA84.png" width="28" />
+1. you can run the ChatBot without deployment in option 2 from Colab NoteBook
+2. you can try it after the deployment using the link
+- *[ChatBot](https://colab.research.google.com/drive/1DfPu5WOCl8w90B7PTIGpDcaF_qB69vHH?usp=sharing#scrollTo=iWVdD2BxPB8s)*
+
 ## Future Features <img src="https://i.imgur.com/8i5qWJE.png" width="28" />
 
 - Notifications and reminders for users.
