@@ -106,7 +106,7 @@ Let me know if you'd like me to stop there or if you'd like me to continue with 
 - *[FrontEnd code](https://colab.research.google.com/drive/1DfPu5WOCl8w90B7PTIGpDcaF_qB69vHH?usp=sharing#scrollTo=iWVdD2BxPB8s)*
 - *[BackEnd code](https://colab.research.google.com/drive/1DfPu5WOCl8w90B7PTIGpDcaF_qB69vHH?usp=sharing#scrollTo=iWVdD2BxPB8s)*
   
-## Deplyment Instructions <img src="https://i.imgur.com/DRfWA84.png" width="28" />
+## Deployment Instructions <img src="https://i.imgur.com/DRfWA84.png" width="28" />
 
 1.Download the SDK Installer:
     ```bash
@@ -138,6 +138,9 @@ Let me know if you'd like me to stop there or if you'd like me to continue with 
    docker build -t gcr.io/groq-sql-app/fastapi-service -f Dockerfile.fastapi .
    docker push gcr.io/groq-sql-app/fastapi-service
    gcloud run deploy fastapi-service  --image gcr.io/groq-sql-app/fastapi-service  --platform managed  --region us-central1  --allow-unauthenticated
+   gcloud config set project groq-sql-app-450212
+   docker build -t gcr.io/groq-sql-app-450212/streamlit-service -f Dockerfile.streamlit .
+   docker push gcr.io/groq-sql-app-450212/streamlit-servic
    ```
 ## run ChatBot Instructions <img src="https://i.imgur.com/DRfWA84.png" width="28" />
 1. you can run the ChatBot without deployment in option 2 from Colab NoteBook
